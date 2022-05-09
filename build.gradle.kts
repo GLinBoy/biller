@@ -17,6 +17,8 @@ repositories {
 
 extra["testcontainersVersion"] = "1.16.2"
 
+defaultTasks "bootRun"
+
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
