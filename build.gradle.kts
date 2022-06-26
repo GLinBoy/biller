@@ -6,6 +6,7 @@ plugins {
 	kotlin("jvm") version "1.6.21"
 	kotlin("plugin.spring") version "1.6.21"
     id("org.ec4j.editorconfig") version "0.0.3"
+    id("com.github.ben-manes.versions") version "0.42.0"
 }
 
 group = "com.glinboy"
