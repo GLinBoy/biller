@@ -17,7 +17,7 @@ repositories {
 	mavenCentral()
 }
 
-extra["testcontainersVersion"] = "1.16.2"
+extra["testcontainersVersion"] = "1.17.2"
 
 defaultTasks "bootRun"
 
