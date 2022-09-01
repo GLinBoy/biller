@@ -2,3 +2,11 @@ spring:
   config:
     activate:
       on-profile: dev
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: bills
+      username: root
+      password: password
+      authentication-database: admnin
