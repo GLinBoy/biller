@@ -20,4 +20,9 @@ class BillResource(private val billService: BillServiceApi) {
     @GetMapping
     fun getBills(pageable: Pageable): ResponseEntity<Page<Bill>> = ResponseEntity.ok(billService.getBills(pageable))
 
+    @GetMapping("/{id}")
+    fun getBill(@PathVariable id: String): ResponseEntity<Bill> = billService.getBill(id)
+        .map { ResponseEntity.ok(it)}
+        .orElseThrow { ResponseStatusException(HttpStatus.NOT_FOUND,
+            "Couldn't find bit with id $id") }
 }
