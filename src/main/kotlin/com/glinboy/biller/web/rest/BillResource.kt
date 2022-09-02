@@ -16,4 +16,8 @@ import java.util.*
 @RestController
 @RequestMapping("/bills")
 class BillResource(private val billService: BillServiceApi) {
+
+    @GetMapping
+    fun getBills(pageable: Pageable): ResponseEntity<Page<Bill>> = ResponseEntity.ok(billService.getBills(pageable))
+
 }
