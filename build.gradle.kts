@@ -17,6 +17,9 @@ repositories {
 	mavenCentral()
 }
 
+val openapiVersion = "1.6.13"
+val embedMongoVersion = "4.2.0"
+
 extra["testcontainersVersion"] = "1.17.6"
 
 defaultTasks "bootRun"
