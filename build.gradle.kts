@@ -36,7 +36,7 @@ dependencies {
 	implementation("org.springdoc:springdoc-openapi-ui:$openapiVersion")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo")
+	testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo:$embedMongoVersion")
 	testImplementation("org.testcontainers:junit-jupiter")
 	testImplementation("org.testcontainers:mongodb")
 }
