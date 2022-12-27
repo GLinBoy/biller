@@ -17,7 +17,7 @@ repositories {
 	mavenCentral()
 }
 
-val openapiVersion = "1.6.13"
+val openapiVersion = "2.0.2"
 val embedMongoVersion = "4.2.0"
 
 extra["testcontainersVersion"] = "1.17.6"
@@ -33,7 +33,7 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-	implementation("org.springdoc:springdoc-openapi-ui:$openapiVersion")
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:$openapiVersion")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo:$embedMongoVersion")
