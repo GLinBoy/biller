@@ -17,7 +17,7 @@ repositories {
 	mavenCentral()
 }
 
-val openapiVersion = "2.0.3"
+val openapiVersion = "2.1.0"
 val embedMongoVersion = "4.6.2"
 
 extra["testcontainersVersion"] = "1.17.6"
