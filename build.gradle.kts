@@ -18,7 +18,7 @@ repositories {
 }
 
 val openapiVersion = "2.1.0"
-val embedMongoVersion = "4.6.2"
+val embedMongoVersion = "4.7.1"
 
 extra["testcontainersVersion"] = "1.18.0"
 
