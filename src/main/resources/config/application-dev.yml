@@ -9,4 +9,4 @@ spring:
       database: bills
       username: root
       password: password
-      authentication-database: admnin
+      authentication-database: admin
