@@ -8,4 +8,5 @@ import java.util.*
 interface BillServiceApi {
     fun getBills(pageable: Pageable): Page<Bill>
     fun getBill(id: String): Optional<Bill>
+    fun saveBill(bill: Bill): Bill
 }
