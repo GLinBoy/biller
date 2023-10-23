@@ -12,4 +12,5 @@ import java.util.*
 class BillServiceImpl(private val billRepository: BillRepository) : BillServiceApi {
     override fun getBills(pageable: Pageable): Page<Bill> = billRepository.findAll(pageable)
     override fun getBill(id: String): Optional<Bill> = billRepository.findById(id)
+    override fun saveBill(bill: Bill): Bill = billRepository.save(bill)
 }
