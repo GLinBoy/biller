@@ -7,6 +7,6 @@ spring:
       host: localhost
       port: 27017
       database: bills
-      username: root
+      username: admin
       password: password
       authentication-database: admin
