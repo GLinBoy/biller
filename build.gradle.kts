@@ -20,7 +20,7 @@ repositories {
 val openapiVersion = "2.3.0"
 val embedMongoVersion = "4.12.0"
 
-extra["testcontainersVersion"] = "1.19.3"
+extra["testcontainersVersion"] = "1.19.5"
 
 defaultTasks "bootRun"
 
