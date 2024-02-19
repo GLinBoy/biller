@@ -5,7 +5,7 @@ plugins {
 	id("io.spring.dependency-management") version "1.1.4"
 	kotlin("jvm") version "1.9.22"
 	kotlin("plugin.spring") version "1.9.22"
-    id("org.ec4j.editorconfig") version "0.0.3"
+    id("org.ec4j.editorconfig") version "0.1.0"
     id("com.github.ben-manes.versions") version "0.50.0"
 }
 
