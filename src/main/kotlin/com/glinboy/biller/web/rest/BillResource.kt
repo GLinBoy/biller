@@ -2,6 +2,7 @@ package com.glinboy.biller.web.rest
 
 import com.glinboy.biller.entity.Bill
 import com.glinboy.biller.service.BillServiceApi
+import io.swagger.v3.oas.annotations.Parameter
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.http.HttpStatus
@@ -20,7 +21,7 @@ import java.net.URI
 class BillResource(private val billService: BillServiceApi) {
 
     @GetMapping
-    fun getBills(pageable: Pageable): ResponseEntity<Page<Bill>> = ResponseEntity.ok(billService.getBills(pageable))
+    fun getBills(@Parameter(hidden = true) pageable: Pageable): ResponseEntity<Page<Bill>> = ResponseEntity.ok(billService.getBills(pageable))
 
     @GetMapping("/{id}")
     fun getBill(@PathVariable id: String): ResponseEntity<Bill> = billService.getBill(id)
