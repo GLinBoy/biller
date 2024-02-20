@@ -16,7 +16,7 @@ services:
 
   biller-mongo-express-dev:
     container_name: biller-mongo-express-dev-container
-    image: mongo-express:1.0.0-alpha.4
+    image: mongo-express:1.0.2-20-alpine3.19
     ports:
       - "27018:8081"
     environment:
