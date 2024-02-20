@@ -7,5 +7,5 @@ import org.springframework.web.bind.annotation.GetMapping
 class HomeController {
 
     @GetMapping("/")
-    fun home(): String = "Welcome to Biller app"
+    fun home(): String = "redirect:/swagger-ui.html"
 }
