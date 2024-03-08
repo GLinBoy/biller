@@ -3,7 +3,7 @@ name: mongodb-dev
 services:
   biller-mongodb-dev:
     container_name: biller-mongo-dev-container
-    image: mongo:7.0.5-jammy
+    image: mongo:7.0.6-jammy
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${DEFAULT_USERNAME_DEV}
       MONGO_INITDB_ROOT_PASSWORD: ${DEFAULT_PASSWORD_DEV}
