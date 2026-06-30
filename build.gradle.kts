@@ -6,7 +6,7 @@ plugins {
 	kotlin("jvm") version "2.3.21"
 	kotlin("plugin.spring") version "2.3.21"
     id("org.ec4j.editorconfig") version "0.1.0"
-    id("com.github.ben-manes.versions") version "0.53.0"
+    id("com.github.ben-manes.versions") version "0.54.0"
 }
 
 group = "com.glinboy"
@@ -22,8 +22,8 @@ repositories {
 	mavenCentral()
 }
 
-val openapiVersion = "3.0.0"
-val embedMongoVersion = "4.23.0"
+val openapiVersion = "3.0.3"
+val embedMongoVersion = "4.33.0"
 
 defaultTasks "bootRun"
 
